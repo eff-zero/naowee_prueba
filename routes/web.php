@@ -1,5 +1,8 @@
 <?php
 
+use App\Http\Controllers\CustomerController;
+use App\Http\Controllers\SaleController;
+use App\Http\Controllers\AddressController;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -16,3 +19,7 @@ use Illuminate\Support\Facades\Route;
 Route::get('/', function () {
     return view('welcome');
 });
+
+Route::resource('customer', CustomerController::class); // RUTAS DE LOS CLIENTES
+Route::resource('sale', SaleController::class); // RUTAS DE LAS VENTAS
+Route::resource('address', AddressController::class); // RUTAS DE LAS DIRECCIONES
