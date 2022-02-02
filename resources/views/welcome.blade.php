@@ -1,33 +1,15 @@
-<!DOCTYPE html>
-<html lang="{{ str_replace('_', '-', app()->getLocale()) }}">
-    <head>
-        <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
+@extends('layouts.main')
 
-        <title>Laravel</title>
+@section('title', 'Bienvenidos')
 
-        <!-- Scripts -->
-        <script src="{{ asset('js/app.js') }}" defer></script> <!-- Instalacion de Bootstrap@v5.1.3  - JS [laravel/ui] -->
-
-        <!-- Styles -->
-        <link href="{{ asset('css/app.css') }}" rel="stylesheet"> <!-- Instalacion de Bootstrap@v5.1.3 - CSS [laravel/ui] -->
-    </head>
-
-    <body>
-        <div class="container-fluid">
-            <div class="row">
-                <div class="col-6">
-                    b5-col
-                </div>
-                <div class="col-6">
-                    b5-col
-                </div>
-            </div>
-        </div>
-    </body>
+@section('content')
+    <div class="container text-center pt-5 pb-5">
+        <a href="" class="btn btn-lg text-white" style="background-color: #ef4e2f" > Ver Clientes </a>
+    </div>
+@endsection
 
 
-    {{-- <body class="antialiased">
+{{-- <body class="antialiased">
         <div class="relative flex items-top justify-center min-h-screen bg-gray-100 dark:bg-gray-900 sm:items-center py-4 sm:pt-0">
             @if (Route::has('login'))
                 <div class="hidden fixed top-0 right-0 px-6 py-4 sm:block">
@@ -136,4 +118,4 @@
             </div>
         </div>
     </body> --}}
-</html>
+
