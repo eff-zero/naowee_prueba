@@ -14,7 +14,10 @@ class SaleFactory extends Factory
     public function definition()
     {
         return [
-            //
+            'customer_id' => $this->faker->numberBetween(1, 10),
+            'subtotal' => $this->faker->numberBetween(100, 100000),
+            'tax' => 0,
+            'total' => 0
         ];
     }
 }

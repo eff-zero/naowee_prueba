@@ -14,7 +14,9 @@ class AddressFactory extends Factory
     public function definition()
     {
         return [
-            //
+            'addressline' => $this->faker->address(),
+            'postalcode' => $this->faker->bothify('######'),
+            'city' => $this->faker->city()
         ];
     }
 }
